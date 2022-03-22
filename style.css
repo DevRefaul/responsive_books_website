@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#header{
+    box-shadow: 1px 0px 5px;
+}
+#header .logo{
+    font-size: 25px;
+    font-weight: 700;
+}
+#header .logo span{
+    color: rgb(255, 5, 234);
+    font-size: 30px;
+}
+#header ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000 ;
+}
+#header ul li a:hover{
+    color: #ff0048;
+}
+#header .icons a{
+  color: #000;
+  font-size: 20px;
+}
+#header .icons i:hover{
+    color: #ff0048;
+}
+
+/* header section style end */
+
+/* hero section style started */
+
+#hero{
+    margin-top: 70px;
+    background-image: url(img/home-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding:230px 0px ;
+}
+.hero-content h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.hero-content h2{
+    color:  #ff0048 ;
+    padding: 20px 0px;
+    font-weight: 00;
+}
+.hero-content p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0px;
+}
+ .cmn-btn{
+    font-size: 15px;
+    width: 200px;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+ .cmn-btn:hover{
+    background-color: #ff0048;
+    font-weight: 500;
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* hero section end */
+
+/* about sectoin started */
+#about{
+    margin: 50px 0px;
+}
+#about .container span{
+    color: #F15B8F;
+}
+#about .container .f-head{
+    font-size: 40px;
+    text-align: center;
+    padding: 10px 0px;
+    margin-bottom: 30px;
+    background-color: #F8E3E8;
+}
+
+#about .row{
+    padding: 50px 0px;
+    position: relative;
+}
+#about .abt-video video{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    object-fit: cover;
+}
+#about .abt-video h3{
+    font-size: 3rem;
+    width: 48%;
+    margin-left: 1px;
+    text-align: center;
+    padding: 10px 00px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: rgba(119, 119, 119, 0.561);
+    mix-blend-mode: screen;
+}
+
+
+
+.abt-content{
+    margin-top: 8%;
+}
+
+/* about sectoin end */
+
+/* category section started */
+
+#category{
+    background-color: rgba(119, 119, 119, 0.3);
+    margin-bottom: 80px;
+    padding: 20px 0px;
+}
+#category .category{
+    padding: 20px 0px;
+}
+#category .category .col-md-3{
+    background-color: #fff;
+     margin-right: 1%;
+    width: 24%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#category .category .col-md-3:hover{
+    background-color: #ff0048c0;
+    color: #fff;
+}
+#category .category .col-md-3:last-child{
+    margin-right: 0;
+}
+#category .category .col-md-3 img{
+   width: 70%;
+    padding: 10px 0px;
+}
+#category .category .col-md-3 .cat-con{
+
+    padding: 10px 0px;
+} 
+#category .category .col-md-3 .cat-con h2{
+    font-size: 15px;
+    padding-bottom: 0;
+}
+
+
+
+/* category section end */
+
+
+/* products section start */
+#products{
+    padding-bottom: 100px;
+}
+#products .container .p-head span{
+    color: #F15B8F;
+}
+#products .container .p-head{
+
+    text-align: center;
+    padding: 10px 0px;
+    margin-bottom: 70px;
+    background-color: #F8E3E8;
+}
+#products .container .p-head h2{
+    font-size: 50px;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.products .p-box{
+    flex: 1 1 3rem;
+    box-shadow: 2px 2px 30px #a7a7a7;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    position: relative;
+}
+.products .p-box .discount{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #F15B8F;
+    font-size: 1.5rem;
+    padding: .7rem 1rem;
+    background-color: rgb(255, 51, 153, .05);
+    z-index: 1;
+}
+.products .p-box .img {
+    position: relative;
+    text-align: center;
+    padding-top: 25px;
+    overflow: hidden;
+}
+.products .p-box .img img{
+    height: 25rem;
+}
+.products .p-box:hover .img img{
+    transform: scale(1.1);
+}
+.products .p-box .img .icons{
+    position: absolute;
+    bottom: -10rem;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+.products .p-box:hover .img .icons{
+    bottom: 0rem;
+}
+.products .p-box .img .icons a{
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.3rem;
+    width: 50%;
+    background-color: #F15B8F;
+    color: #fff;
+    text-decoration: none;
+}
+.products .p-box .img .icons a:hover{
+    background-color: #333;
+}
+.products .p-box .img .icons .cart-btn{
+    width: 100%;
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+}
+.prod-con{
+    padding: 20px 0px;
+
+}
+.prod-con h4{
+    font-size: 30px;
+        color: #333;
+}
+.prod-con .price{
+    color: #F15B8F;
+    font-size: 25px;
+    font-weight: 500;
+}
+.prod-con .price span{
+    color: #333;
+    font-size: 20px;
+}
+
+/* products section end */
+
+/* reviews section start */
+
+#reviews{
+
+}
+#reviews .reviews .r-heading {
+    padding: 20px;
+    margin-bottom:80px ;
+    background-color: #F8E3E8;
+}
+#reviews .reviews .r-heading h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+#reviews .reviews .r-heading h1 span{
+    color: #F15B8F;
+}
+#reviews .cards{
+    display: flex;
+    margin-bottom: 50px;
+    gap: 2rem;
+
+}
+#reviews .cards .card{
+    box-shadow: 2px 2px 20px rgb(177, 175, 175);
+    border-radius: 5px;
+}
+#reviews .cards .card i.fa.fa-star.checked{
+    color: #ff0048;
+}
+#reviews .cards .card p{
+
+}
+#reviews .cards .card .f-con{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#reviews .cards .card .f-con .r-img{
+    display: flex;
+    align-items: center;
+}
+#reviews .cards .card .f-con .r-img img{
+    width: 30%;
+    border-radius: 50%;
+}
+
+
+
+
+
+.c-name{
+    padding-left: 10px;
+}
+
+.bq i {
+    font-size: 80px;
+    color: #777;
+}
+
+/* reviews section end */
+
+/* contact section start */
+#contact{
+    padding: 50px 0px;
+}
+#contact .container .c-head span{
+    color: #F15B8F;
+}
+#contact .container .c-head{
+
+    text-align: center;
+    padding: 10px 0px;
+    margin-bottom: 30px;
+    background-color: #F8E3E8;
+}
+#contact .container .c-head h2{
+    font-size: 50px;
+}
+#contact .form{
+    padding: 30px 15px;
+    background-color: #ffffff;
+    border: 1px solid rgba(119, 119, 119, 0.3);
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+#contact .form input{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 8px 0px;
+    border-radius: 5px;
+    outline: none;
+}
+#contact .form textarea{
+    width: 100%;
+} 
+#contact .form ::placeholder{
+    font-size: 20px;
+    padding-left: 10px;
+}
+#contact .form .cmn-btn{
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.form-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+
+}
+
+
+
+/* contact section end */
+
+/* footer section start */
+
+#footer{
+    margin: 30px 0px 20px 0px;
+
+}
+.ft-row{
+    padding-bottom: 20px;
+}
+
+#footer .col-md-3{
+    margin-top: 20px;
+}
+#footer .col-md-3 a{
+    text-decoration: none;
+    color: #777;
+}
+#footer .col-md-3 a:hover{
+    color: #ff0048;
+}
+
+
+.creator{
+    padding: 30px 0px 20px 0px;
+    text-align: center;
+    border-top: 1.5px solid rgba(119, 119, 119, 0.3);
+}
+.creator .fas{
+    color: red;
+}
+
+.crat{
+    color: #ff0048;
+}
+
+/* footer section end */
+
+
+
+
+
+
+
+
+
+/* media querys */
+@media  (max-width:320px){
+    #hero{
+        padding:60px 10px ;
+    }
+    #about .abt-video h3{
+        width: 90%;
+        font-size: 1rem;
+        top: 26% ;
+
+    }
+    #category .category .col-md-3{
+        width: 80%;
+       margin: 0 auto;
+       margin-bottom: 20px;
+    }
+    #category .category .col-md-3:last-child{
+        margin-right: 34px ;
+    }
+    .products .p-box{
+        display: block;
+        flex: none;
+        width: 100% !important ;
+        padding: 0px 10px;
+        gap: 0;
+    } 
+    .products .p-box .img img{
+        width: 100%;
+        height: auto;
+    }
+    #reviews .cards{
+        display: block;
+        width: 100% !important;
+        margin-bottom: 50px;
+
+    
+    }
+    #reviews .cards .card{
+        width: 100% !important;
+        margin-bottom: 50px;
+        gap: 0rem;
+        margin-right: 0;
+        padding: 0px 10px;
+    }
+    .bq i {
+        font-size: 30px;
+
+    }
+
+}
+@media  (min-width:325px) and (max-width:375px){
+    #hero{
+        padding:70px 10px ;
+    }
+    #about .abt-video h3{
+        width: 90%;
+        font-size: 1rem;
+        top: 27% ;
+
+    }
+    #category .category .col-md-3{
+        width: 80%;
+       margin: 0 auto;
+       margin-bottom: 20px;
+    }
+    #category .category .col-md-3:last-child{
+        margin-right: 34px ;
+    }
+    .products .p-box{
+        display: block;
+        flex: none;
+        width: 100% !important ;
+        padding: 0px 10px;
+        gap: 0;
+    } 
+    .products .p-box .img img{
+        width: 100%;
+        height: auto;
+    }
+
+    #reviews .cards{
+        display: block;
+        margin-bottom: 50px;
+        gap: 0rem;
+    
+    }
+    #reviews .cards .card{
+        width: 100% !important;
+        margin-bottom: 50px;
+        gap: 0rem;
+        margin-right: 0;
+        padding: 0px 10px;
+    }
+    .bq i {
+        font-size: 30px;
+
+    }
+}
+
+@media  (min-width:376px) and (max-width:426px){
+    #hero{
+        padding:80px 10px ;
+    }
+    #about .abt-video h3{
+        width: 92%;
+        font-size: 1.2rem;
+        top: 28% ;
+
+    }
+    #category .category .col-md-3{
+        width: 80%;
+       margin: 0 auto;
+       margin-bottom: 20px;
+    }
+    #category .category .col-md-3:last-child{
+        margin-right: 40px ;
+    }
+    .products .p-box{
+        display: block;
+        flex: none;
+        width: 100% !important ;
+        padding: 0px 10px;
+        gap: 0;
+    } 
+    .products .p-box .img img{
+        width: 100%;
+        height: auto;
+    }
+
+    #reviews .cards{
+        display: block;
+        margin-bottom: 50px;
+        gap: 0rem;
+    
+    }
+    #reviews .cards .card{
+        width: 100% !important;
+        margin-bottom: 50px;
+        gap: 0rem;
+        margin-right: 0;
+        padding: 0px 10px;
+    }
+    .bq i {
+        font-size: 30px;
+
+    }
+}
+
+@media (min-width:428px)  and (max-width:768px) {
+    #hero{
+        padding:100px 10px ;
+    }
+    #about{
+        margin-bottom: 20px;
+    }
+    #about .abt-video h3{
+        font-size: 1.2rem;
+        top: 43%;
+        width: 46%;
+    }
+    .abt-content{
+        margin-top: 0%;
+    }
+    #category .category .col-md-3{
+        width: 40%;
+       margin: 0 auto;
+       margin-bottom: 20px;
+    }
+    #category .category .col-md-3:last-child{
+        margin-right: 35px ;
+    }
+    .products .p-box{
+        display: block;
+        flex: none;
+        width: 45% !important ;
+        padding: 0px 10px;
+        gap: 0;
+    } 
+    .products .p-box .img img{
+        width: 100%;
+        height: auto;
+    }
+    #reviews .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+        gap: 0rem;
+    
+    }
+    #reviews .cards .card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 45% !important;
+        margin-bottom: 50px;
+        gap: 0rem;
+
+        padding: 0px 10px;
+    }
+    #reviews .cards .card:first-child{
+        margin-right: 5% ;
+    }
+    #reviews .cards .f-con h4{
+        font-size: 1rem;
+    }
+    .bq i {
+        font-size: 30px;
+
+    }
+}
+
+@media (min-width:769px)  and (max-width:990px){
+    #about .abt-video h3{
+        font-size: 1.2rem;
+        top: 40%;
+        width: 46%;
+    }
+    #reviews .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+        gap: 0rem;
+    
+    }
+    #reviews .cards .card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 45% !important;
+        margin-bottom: 50px;
+        gap: 0rem;
+
+        padding: 0px 10px;
+    }
+    #reviews .cards .card:first-child{
+        margin-right: 5% ;
+    }
+}
+
+@media (min-width:991px)  and (max-width:1024px){
+    #hero{
+        padding:80px 10px ;
+    }
+    #about .abt-video h3{
+        font-size: 1.2rem;
+        top: 47%;
+        width: 46%;
+    }
+
+
+    #reviews .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+        gap: 0rem;
+    
+    }
+    #reviews .cards .card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 45% !important;
+        margin-bottom: 50px;
+        gap: 0rem;
+
+        padding: 0px 10px;
+    }
+    #reviews .cards .card:first-child{
+        margin-right: 5% ;
+    }
+
+    .bq i {
+        font-size: 40px;
+
+    }
+}
